@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { startWebContainerLogin } from './webcontainer-auth'
+import WebContainerDemo from './WebContainerDemo'
 
 // ---- Icon set (inline SVG, no external deps) ----
 
@@ -533,6 +534,7 @@ export default function App() {
       <CloudSection />
       <Integrations />
       <CTA />
+      <WebContainerDemo />
       <Footer />
     </div>
   )
