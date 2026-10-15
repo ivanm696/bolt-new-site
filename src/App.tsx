@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { startWebContainerLogin } from './webcontainer-auth'
 
 // ---- Icon set (inline SVG, no external deps) ----
 
@@ -149,6 +150,10 @@ function Navbar() {
                 {l.label}
               </a>
             ))}
+            <button onClick={startWebContainerLogin}
+              className="text-dark-300 hover:text-white transition-colors text-sm font-medium border border-dark-600 hover:border-dark-400 px-3 py-2 rounded-lg">
+              Войти через WebContainer
+            </button>
             <a href="https://bolt.new" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 bg-primary-600 hover:bg-primary-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary-600/30">
               Начать <IconArrowRight className="w-4 h-4" />

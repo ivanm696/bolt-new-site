@@ -20,3 +20,8 @@ export function initWebContainerAuth(): void {
     console.error('[webcontainer] auth.init failed:', result.error, result.description)
   }
 }
+
+// Redirects the page to StackBlitz to authorize this app with the user's account.
+export function startWebContainerLogin(): void {
+  auth.startAuthFlow()
+}

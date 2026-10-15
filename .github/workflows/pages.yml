@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Public OAuth client id (PKCE), safe to ship in the bundle.
+          VITE_WC_CLIENT_ID: wc_api_ivanm696_7e315a57e25bcd310e0318f0b07454db
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
