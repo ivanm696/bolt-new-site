@@ -1,0 +1,4 @@
+[submodule "ai-library"]
+	path = ai-library
+	url = https://github.com/ivanm696/ai-library.git
+	branch = library-v2-claude
